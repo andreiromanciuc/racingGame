@@ -1,15 +1,10 @@
 package org.fasttrackit;
 
-public class Car {
+// inharitance or "is-a" relationship
+public class Car extends Vehicle{
 
 //    instance variables
 
-    String name;
-    String color;
-    double mileage;
-    double mxSpeed;
-    double fuelLevel;
-    double traveledDistance;
-    boolean running;
+
     int doorCount;
 }
