@@ -2,6 +2,10 @@ package org.fasttrackit;
 
 public class Vehicle {
 
+    // class variable
+    static int totalCount;
+
+// instance variables
     String name;
     String color;
     double mileage;
