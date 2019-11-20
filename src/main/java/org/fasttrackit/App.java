@@ -1,9 +1,6 @@
 package org.fasttrackit;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
 
