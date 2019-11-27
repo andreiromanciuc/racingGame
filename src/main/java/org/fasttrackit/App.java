@@ -15,12 +15,12 @@ public class App
         carEngine.capacity = 1.5;
 
        Car carReference = new Car(carEngine);
-       carReference.name = "Dacia";
-       carReference.color = "red";
-       carReference.mileage = 9.8;
-       carReference.fuelLevel = 60;
-       carReference.maxSpeed = 200;
-       carReference.running = false;
+       carReference.setName("Dacia");
+       carReference.setColor("Red");
+       carReference.setMileage(9.8);
+       carReference.setFuelLevel(60);
+       carReference.setMaxSpeed(200);
+       carReference.setRunning(false);
        carReference.doorCount = 2;
 
 
@@ -35,7 +35,7 @@ public class App
         Mechanic mechanic = new Mechanic();
         mechanic.repairVehicle(carReference);
 
-        System.out.println("Total traveled distance after repair: " + carReference.traveledDistance);
+        System.out.println("Total traveled distance after repair: " + carReference.getTraveledDistance());
 
 Engine car2enigine = new Engine();
 car2enigine.manufacturer = "Bavaria Motors";
@@ -43,47 +43,42 @@ car2enigine.capacity = 2;
 
 
        Car car2 = new Car(car2enigine);
-        car2.name = "BMW";
-        car2.mileage = 14;
-        car2.color = null;
+        car2.setName("BMW");
+        car2.setMileage(14);
+        car2.setColor(null);
 
 
 //        concatenation - lipirea a doua stringuri
-        System.out.println("First car name: " + carReference.name);
-        System.out.println("First car color: " + carReference.color);
-        System.out.println("First car mileage: " + carReference.mileage);
-        System.out.println("First car fuel Level: " + carReference.fuelLevel);
-        System.out.println("First car max Speed: " + carReference.maxSpeed);
-        System.out.println("First car running: " + carReference.running);
+        System.out.println("First car name: " + carReference.getName());
+        System.out.println("First car color: " + carReference.getColor());
+        System.out.println("First car mileage: " + carReference.getMileage());
+        System.out.println("First car fuel Level: " + carReference.getFuelLevel());
+        System.out.println("First car max Speed: " + carReference.getMaxSpeed());
         System.out.println("First car door number: " + carReference.doorCount);
 
-        System.out.println("Second car name: " + car2.name);
-        System.out.println("Second car mileage: " + car2.mileage);
-        System.out.println(car2.color);
-        System.out.println(car2.fuelLevel);
-        System.out.println(car2.maxSpeed);
-        System.out.println(car2.running);
-        System.out.println(car2.doorCount);
+        System.out.println("Second car name: " + car2.getName());
+        System.out.println("Second car mileage: " + car2.getMileage());
+
 
         Car car3 = new Car(carEngine);
-        car3.name = "Audi";
+        car3.setName("Audi");
 
-        System.out.println("numele masinii 2 " + car2.name);
-        System.out.println("numele masinii 3 " + car3.name);
+        System.out.println("numele masinii 2 " + car2.getName());
+        System.out.println("numele masinii 3 " + car3.getName());
 
 
         System.out.println("Studying class variables (static variables)...");
 
         Vehicle vehicle1 = new Vehicle();
-        vehicle1.totalCount = 10;
+        Vehicle.totalCount = 10;
 
         Vehicle vehicle2 = new Vehicle();
-        vehicle2.totalCount = 20;
+        Vehicle.totalCount = 20;
 
         Vehicle.totalCount = 30;
 
-        System.out.println("Total vehicle count from vehicle1: "+ vehicle1.totalCount);
-        System.out.println("Total vehicle count from vehicle2: "+ vehicle2.totalCount);
+        System.out.println("Total vehicle count from vehicle1: "+ Vehicle.totalCount);
+        System.out.println("Total vehicle count from vehicle2: "+ Vehicle.totalCount);
         System.out.println("Total vehicle count from Vehicle class: "+ Vehicle.totalCount);
 
 
