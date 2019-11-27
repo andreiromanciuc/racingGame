@@ -37,7 +37,7 @@ public class Vehicle {
 
         if (speed >120){
             System.out.println("Going fast... you'll use more fuel");
-            mileage += 5;
+            
 //            increasing mileage multiplier with percentage of
 //           acceleration's speed
             mileageMultiplier = speed/100;
