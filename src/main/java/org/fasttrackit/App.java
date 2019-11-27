@@ -7,6 +7,8 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "WELCOME TO THE RACING GAME!" );
+        Game game = new Game();
+        game.start();
 
         Engine carEngine = new Engine();
         carEngine.manufacturer = "Renault";
