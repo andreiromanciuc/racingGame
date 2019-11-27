@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 
-public class App 
+public class App
 {
 
     public static void main( String[] args )
@@ -9,6 +9,8 @@ public class App
         System.out.println( "WELCOME TO THE RACING GAME!" );
         Game game = new Game();
         game.start();
+
+        Car carWithDefaultEngine = new Car();
 
         Engine carEngine = new Engine();
         carEngine.manufacturer = "Renault";
