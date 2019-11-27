@@ -17,7 +17,7 @@ public class App
        carReference.color = "red";
        carReference.mileage = 9.8;
        carReference.fuelLevel = 60;
-       carReference.mxSpeed = 200;
+       carReference.maxSpeed = 200;
        carReference.running = false;
        carReference.doorCount = 2;
 
@@ -50,7 +50,7 @@ car2enigine.capacity = 2;
         System.out.println("First car color: " + carReference.color);
         System.out.println("First car mileage: " + carReference.mileage);
         System.out.println("First car fuel Level: " + carReference.fuelLevel);
-        System.out.println("First car max Speed: " + carReference.mxSpeed);
+        System.out.println("First car max Speed: " + carReference.maxSpeed);
         System.out.println("First car running: " + carReference.running);
         System.out.println("First car door number: " + carReference.doorCount);
 
@@ -58,7 +58,7 @@ car2enigine.capacity = 2;
         System.out.println("Second car mileage: " + car2.mileage);
         System.out.println(car2.color);
         System.out.println(car2.fuelLevel);
-        System.out.println(car2.mxSpeed);
+        System.out.println(car2.maxSpeed);
         System.out.println(car2.running);
         System.out.println(car2.doorCount);
 
