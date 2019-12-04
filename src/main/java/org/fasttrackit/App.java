@@ -10,6 +10,13 @@ public class App
         Game game = new Game();
         game.start();
 
+        JokerVehicle jokerVehicle = new JokerVehicle();
+        jokerVehicle.setName("Joker");
+        jokerVehicle.setFuelLevel(80);
+        jokerVehicle.accelerate(60, 1);
+
+        System.out.println("Joker's total distance: "+ jokerVehicle.getTraveledDistance());
+
         Car carWithDefaultEngine = new Car();
 
         Engine carEngine = new Engine();
@@ -83,7 +90,7 @@ car2enigine.capacity = 2;
         System.out.println("Total vehicle count from vehicle2: "+ Vehicle.totalCount);
         System.out.println("Total vehicle count from Vehicle class: "+ Vehicle.totalCount);
 
-
+Car car4 = new Car(carEngine);
 
     }
 }
