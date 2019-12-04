@@ -10,10 +10,16 @@ public class App
         Game game = new Game();
         game.start();
 
-        JokerVehicle jokerVehicle = new JokerVehicle();
+
+//       Method implementation taken from object's class
+        Vehicle jokerVehicle = new JokerVehicle();
         jokerVehicle.setName("Joker");
         jokerVehicle.setFuelLevel(80);
         jokerVehicle.accelerate(60, 1);
+
+//        variable's class determines what methods can be called
+//        type casting
+        ((JokerVehicle) jokerVehicle).fly();
 
         System.out.println("Joker's total distance: "+ jokerVehicle.getTraveledDistance());
 
