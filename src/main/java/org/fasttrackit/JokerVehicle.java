@@ -14,4 +14,10 @@ public class JokerVehicle extends Vehicle{
         return disstance;
 
     }
+//    co-variant return type
+//    access cannot be more restrictive than in the parent class
+    @Override
+    public JokerVehicle clone(){
+        return new JokerVehicle();
+    }
 }
